@@ -1,11 +1,17 @@
-import React from 'react'
+import { useState } from "react" 
+
+const Addtask = () => {
+    const [text, setText] = useState ('')
+    const [day, setDay] = useState ('')
+    const [reminder, setreminder] = useState (false)
+}
 
 const AddTask = () => {
   return (
     <form className='add-form'>
         <div className='form-control'>
             <label>Task</label>
-            <input type="text" placeholder='Add Task'/>
+            <input type="text" placeholder='Add Task' value={text}/>
         </div>
         <div className='form-control'>
             <label>Day & Time </label>
