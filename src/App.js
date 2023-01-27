@@ -48,7 +48,7 @@ const App = () => {
     <div className="App">
       <Header onAdd={ ()=> setShowAddTask (!showAddTask)} />
 
-      {showAddTask && <AddTask onAdd={addTask} />}
+      <AddTask onAdd={addTask} />
      { tasksList.length > 0 ? 
      <Tasks tasks={tasksList} onDelete={deleteTask} onToggle={ToggleReminder}/>
     :'No Tasks to show'}
