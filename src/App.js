@@ -45,7 +45,7 @@ const App = () => {
     setTasks(tasksList.filter( (Task) => Task.id !== id))
   }
   return (
-    <div className="App">
+    <div className="container">
       <Header onAdd={ ()=> setShowAddTask (!showAddTask)} />
 
       <AddTask onAdd={addTask} />
